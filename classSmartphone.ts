@@ -43,3 +43,29 @@ newObjectPhone.makePhoneCall();
 newObjectPhone.makePhoneCall();
 newObjectPhone.makePhoneCall();
 newObjectPhone.makePhoneCall();
+
+class Android extends Smartphone{
+    protected tiendaAplicaciones:string;
+
+    constructor(tiendaAplicaciones:string , color:string){
+        super(color,'Samsung')
+        this.tiendaAplicaciones = tiendaAplicaciones;
+    }
+}
+
+class Iphone extends Smartphone{
+    protected tiendaAplicaciones:string;
+
+    constructor(tiendaAplicaciones:string , color:string){
+        super(color,'Apple')
+        this.tiendaAplicaciones = tiendaAplicaciones;
+    }
+}
+
+let celularIphone =  new Iphone ('AppleStore', 'White');
+let celularAndroind = new Android ('GooglePlay', 'Black');
+
+celularIphone.battery;
+celularAndroind.battery;
+
+
